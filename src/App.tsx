@@ -6,10 +6,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import { AuthProvider } from "@/contexts/AuthContext";
 import Index from "./pages/Index";
-import Products from "./pages/Products";
-import SuccessStories from "./pages/SuccessStories";
-import MemberBenefits from "./pages/MemberBenefits";
-import Policies from "./pages/Policies";
+import About from "./pages/About";
+import Services from "./pages/Services";
+import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import Login from './pages/Login';
 import AddVideo from './pages/AddVideo';
@@ -33,10 +32,9 @@ const App = () => (
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
-            <Route path="/products" element={<Products />} />
-            <Route path="/success-stories" element={<SuccessStories />} />
-            <Route path="/member-benefits" element={<MemberBenefits />} />
-            <Route path="/policies" element={<Policies />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="/login" element={<Login />} />
             <Route path="/add-video" element={<AddVideo />} />
             <Route path="/dashboard" element={<Dashboard />} />
@@ -46,10 +44,6 @@ const App = () => (
             <Route path="/list-video" element={<VideosList />} />
             <Route path="/edit-video/:id" element={<EditVideo />} />
             <Route path="/view-video/:id" element={<ViewVideo />} />
-
-
-
-
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

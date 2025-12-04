@@ -1,190 +1,128 @@
 export const en = {
   nav: {
     home: "Home",
-    product: "Products",
-    solutions: "Solutions",
-    customers: "Success Stories",
-    memberBenefits: "Member Benefits",
-    policies: "Policies",
-    resources: "Resources",
-    company: "Company",
+    about: "About",
+    services: "Services",
+    contact: "Contact",
     login_button: "Login",
-    logout: "Logout", 
+    logout: "Logout",
+    consultation: "Request Consultation",
   },
   hero: {
-    title: "Transform Data Complexity Into Simple Conversations",
-    subtitle: "An AI-powered data assistant that connects to your enterprise systems and delivers instant insights in natural language—no technical skills required.",
-    bookDemo: "Book a Demo",
-    watchDemo: "Watch Demo",
+    title: "Elevating Intelligent Luxury",
+    subtitle: "Where discretion meets excellence. Rakan delivers bespoke solutions for the world's most discerning clients, combining unparalleled expertise with unwavering commitment to privacy.",
+    cta: "Request a Consultation",
+    secondary: "Discover Our Approach",
   },
-  trustedBy: "Trusted by leading enterprises worldwide",
-  product: {
-    title: "Your AI Data Assistant",
-    subtitle: "iGenius empowers every team member to access, understand, and act on data—simply by asking questions in plain English.",
-    features: {
-      naturalLanguage: {
-        title: "Ask Anything in Plain English",
-        description: "No SQL, no formulas—just ask your questions naturally and get immediate answers.",
+  about: {
+    title: "The Rakan Difference",
+    subtitle: "A legacy of excellence, built on trust and discretion.",
+    description: "For those who demand the extraordinary, Rakan represents the pinnacle of professional service. We operate at the intersection of intelligence and elegance, delivering solutions that transcend conventional expectations.",
+    values: {
+      title: "Our Values",
+      discretion: {
+        title: "Absolute Discretion",
+        description: "Privacy is not just a promise—it's the foundation of everything we do.",
       },
-      security: {
-        title: "Enterprise-Grade Security",
-        description: "Bank-level encryption, role-based access, and full compliance with industry standards.",
+      excellence: {
+        title: "Uncompromising Excellence",
+        description: "We accept nothing less than perfection in every detail, every interaction.",
       },
-      realTime: {
-        title: "Real-Time Dashboards",
-        description: "Get live visualizations and up-to-the-minute insights on your most critical KPIs.",
-      },
-      explainable: {
-        title: "Explainable AI Insights",
-        description: "Every answer comes with transparent explanations so you can trust your data decisions.",
+      innovation: {
+        title: "Intelligent Innovation",
+        description: "Cutting-edge solutions delivered with timeless sophistication.",
       },
     },
-  },
-  useCases: {
-    title: "Built for Every Team",
-    subtitle: "From C-suite to operations, iGenius delivers role-specific insights that drive results.",
-    executives: {
-      title: "For Executives",
-      description: "Instant visibility on KPIs and strategic metrics. Make faster, data-informed decisions.",
+    mission: {
+      title: "Our Mission",
+      description: "To redefine what's possible for our clients by combining world-class expertise with an unwavering commitment to discretion and excellence.",
     },
-    finance: {
-      title: "For Finance",
-      description: "Accelerate reporting, forecasting, and budget analysis with automated insights.",
+    vision: {
+      title: "Our Vision",
+      description: "To be the trusted partner of choice for distinguished individuals and organizations seeking exceptional, confidential solutions.",
     },
-    sales: {
-      title: "For Sales",
-      description: "Monitor pipeline health, performance trends, and conversion metrics in real time.",
+    story: {
+      title: "Our Story",
+      description: "Founded on principles of excellence and discretion, Rakan has grown to become the preferred choice for clients who value privacy, quality, and unparalleled service. Our journey is defined not by public accolades, but by the lasting relationships we've built with those who trust us with their most important matters.",
     },
-    operations: {
-      title: "For Operations",
-      description: "Track performance, spot anomalies, and optimize workflows with actionable data.",
+    team: {
+      title: "Leadership",
+      subtitle: "Guided by expertise, driven by excellence.",
     },
   },
-  howItWorks: {
-    title: "How It Works",
-    subtitle: "Get started in minutes with our simple three-step process.",
-    step1: {
-      title: "Connect Your Data Sources",
-      description: "Securely link your databases, CRMs, ERPs, and other business systems.",
+  services: {
+    title: "Our Services",
+    subtitle: "Bespoke solutions crafted for exceptional outcomes.",
+    description: "Each engagement is tailored to your unique requirements, delivered with the discretion and excellence that define the Rakan experience.",
+    learnMore: "Learn More",
+    items: {
+      strategic: {
+        title: "Strategic Advisory",
+        description: "Expert guidance for complex decisions, delivered with confidentiality and precision.",
+      },
+      wealth: {
+        title: "Wealth Preservation",
+        description: "Sophisticated strategies to protect and grow generational wealth.",
+      },
+      private: {
+        title: "Private Transactions",
+        description: "Discreet facilitation of high-value acquisitions and arrangements.",
+      },
+      family: {
+        title: "Family Office Services",
+        description: "Comprehensive management for distinguished family enterprises.",
+      },
+      risk: {
+        title: "Risk Intelligence",
+        description: "Proactive identification and mitigation of potential vulnerabilities.",
+      },
+      lifestyle: {
+        title: "Lifestyle Concierge",
+        description: "Elevated experiences curated to the most exacting standards.",
+      },
     },
-    step2: {
-      title: "Ask Questions in Natural Language",
-      description: "Type or speak your questions just like you would to a colleague.",
-    },
-    step3: {
-      title: "Get Instant Insights",
-      description: "Receive answers, visualizations, and explanations in seconds.",
-    },
-  },
-  benefits: {
-    title: "Why Choose iGenius",
-    subtitle: "Unlock the full potential of your data with AI that works for everyone.",
-    speed: {
-      title: "Faster Decisions",
-      description: "Cut analysis time from hours to seconds and act on opportunities immediately.",
-    },
-    democratization: {
-      title: "Data for Everyone",
-      description: "Empower non-technical users to access insights without relying on analysts.",
-    },
-    efficiency: {
-      title: "Reduced Dependency",
-      description: "Free up your data teams by automating routine queries and reports.",
-    },
-  },
-  testimonials: {
-    title: "What Our Customers Say",
-    subtitle: "Join hundreds of enterprises transforming their data culture.",
-    testimonial1: {
-      name: "Sarah Chen",
-      role: "CFO, Global Logistics Inc.",
-      text: "iGenius reduced our monthly reporting time by 30% and gave our finance team the freedom to focus on strategic analysis.",
-    },
-    testimonial2: {
-      name: "Michael Torres",
-      role: "VP of Sales, TechCorp",
-      text: "Our sales managers now have real-time pipeline visibility without waiting for dashboards. It's a game-changer.",
-    },
-    testimonial3: {
-      name: "Emma Williams",
-      role: "COO, Healthcare Solutions",
-      text: "We can now identify operational bottlenecks instantly. iGenius has become essential to our daily operations.",
-    },
-  },
-  resources: {
-    title: "Resources & Insights",
-    subtitle: "Learn how AI is transforming enterprise data analytics.",
-    guide: {
-      title: "AI for Business Leaders",
-      description: "A comprehensive guide to implementing AI-driven analytics in your organization.",
-      cta: "Download Guide",
-    },
-    webinar: {
-      title: "Democratizing Data Access",
-      description: "Watch our on-demand webinar on empowering teams with self-service analytics.",
-      cta: "Watch Now",
-    },
-    whitepaper: {
-      title: "The Future of Enterprise Analytics",
-      description: "Explore emerging trends and best practices in AI-powered business intelligence.",
-      cta: "Read Whitepaper",
+    cta: {
+      title: "Begin Your Journey",
+      description: "Every exceptional outcome starts with a conversation.",
+      button: "Schedule a Private Consultation",
     },
   },
   contact: {
-    title: "See iGenius in Action",
-    subtitle: "Book a personalized demo and discover how iGenius can transform your data operations.",
+    title: "Start a Confidential Conversation",
+    subtitle: "Your inquiry will be handled with the utmost discretion. We respond to all inquiries within 24 hours.",
     form: {
       name: "Full Name",
-      company: "Company Name",
-      email: "Work Email",
-      role: "Your Role",
-      message: "Tell us about your data challenges",
-      submit: "Book My Demo",
+      email: "Email Address",
+      phone: "Phone Number",
+      subject: "Subject",
+      message: "Your Message",
+      submit: "Send Inquiry",
+      submitting: "Sending...",
     },
+    info: {
+      title: "Direct Contact",
+      subtitle: "For matters requiring immediate attention.",
+      email: "inquiries@rakan.com",
+      phone: "+1 (800) RAKAN",
+      address: "By appointment only",
+    },
+    privacy: "All communications are encrypted and handled with strict confidentiality.",
   },
   footer: {
-    tagline: "Empowering enterprises to unlock the full potential of their data through AI.",
-    product: "Product",
-    solutions: "Solutions",
-    company: "Company",
-    resources: "Resources",
+    tagline: "Elevating Intelligent Luxury",
+    description: "Where discretion meets excellence.",
+    quickLinks: "Quick Links",
+    contact: "Contact",
     legal: "Legal",
     privacy: "Privacy Policy",
     terms: "Terms of Service",
-    copyright: "© 2025 iGenius. All rights reserved.",
+    copyright: "© 2025 Rakan. All rights reserved.",
+    confidential: "All inquiries handled with strict confidentiality.",
   },
-  successStories: {
-    title: "Success Stories",
-    subtitle: "Discover how leading enterprises are transforming their data operations with iGenius.",
-    cta: "Read Full Story",
-    watchVideo: "Watch Video",
-    challenge: "The Challenge",
-    solution: "The Solution",
-    results: "The Results",
-    ctaSection: {
-      title: "Ready to Write Your Success Story?",
-      subtitle: "Join these leading enterprises and transform how your organization works with data.",
-    },
+  splash: {
+    tagline: "Elevating Intelligent Luxury",
   },
-  products: {
-    title: "Our Products",
-    subtitle: "Comprehensive AI-powered solutions designed for enterprise data analytics.",
-    cta: "Learn More",
-    demo: "Watch Demo",
-  },
-  memberBenefits: {
-    title: "Member Benefits",
-    subtitle: "Join our community and unlock exclusive advantages for your organization.",
-    cta: "Become a Member",
-  },
-  policies: {
-    title: "Policies & Compliance",
-    subtitle: "Our commitment to security, privacy, and regulatory compliance.",
-    privacyPolicy: "Privacy Policy",
-    termsOfService: "Terms of Service",
-    dataProcessing: "Data Processing Agreement",
-    security: "Security Policy",
-  },
+  // Preserve existing translations for backend pages
   dashboard: {
     title: "Dashboard",
     welcome: "Welcome back",
@@ -197,9 +135,9 @@ export const en = {
   },
   login: {
     userId: "User ID",
-    userIdPlaceholder: "Enter your Telegram ID or phone number",
+    userIdPlaceholder: "Enter your ID or phone number",
     title: "Welcome Back",
-    subtitle: "Sign in to your iGenius account",
+    subtitle: "Sign in to your Rakan account",
     signIn: "Sign In",
     enterCredentials: "Enter your credentials to access your account",
     email: "Email Address",
@@ -210,9 +148,9 @@ export const en = {
     forgotPassword: "Forgot password?",
     noAccount: "Don't have an account?",
     signUp: "Sign up",
-    demoHint: "For demo purposes, use any email and password",
-    contactSales: "Need help?",
-    contactUs: "Contact sales"
+    demoHint: "Use your credentials to access your account",
+    contactSales: "Need assistance?",
+    contactUs: "Contact us"
   },
   videos: {
     addVideo: "Add New Video",
@@ -236,57 +174,40 @@ export const en = {
     uploading: "Uploading...",
     note: "Note",
     requiredFields: "Fields marked with * are required.",
-
-
-
-    "management": "Video Management",
-    "manageAllVideos": "Manage all website videos",
-    "editVideo": "Edit Video",
-    "editVideoSubtitle": "Update video details and files",
-    "editVideoDetails": "Edit Video Details",
-    "updateVideoDetails": "Update the video information below",
-    
-    // Video details form
-    // Actions and status
-    // Status messages
-    "active": "Active",
-    "inactive": "Inactive",
-    "published": "Published",
-    "draft": "Draft",
-    
-    // Actions
-    "viewDetails": "View Details",
-    "edit": "Edit",
-    "delete": "Delete",
-    "playVideo": "Play Video",
-    "viewImage": "View Image",
-    "saveChanges": "Save Changes",
-    "cancel": "Cancel",
-    "update": "Update",
-    
-    // Messages
-    "videoUpdated": "Video updated successfully",
-    "videoDeleted": "Video deleted successfully",
-    "videoAdded": "Video added successfully",
-    "errorLoading": "Error loading videos",
-    "noVideosFound": "No videos found",
-    
-    // Statistics
-    "totalVideos": "Total Videos",
-    "activeVideos": "Active Videos",
-    "latestVideoNumber": "Latest Video Number",
-    
-    // Search and filter
-    "searchPlaceholder": "Search videos by title, description, or number...",
-    "filterActive": "Active Only",
-    "allVideos": "All Videos",
-    
-    // Table headers
-    "number": "#",
-    "description": "Description",
-    "status": "Status",
-    "created": "Created",
-    "actions": "Actions",
-    "updating": "Updating...",
+    management: "Video Management",
+    manageAllVideos: "Manage all website videos",
+    editVideo: "Edit Video",
+    editVideoSubtitle: "Update video details and files",
+    editVideoDetails: "Edit Video Details",
+    updateVideoDetails: "Update the video information below",
+    active: "Active",
+    inactive: "Inactive",
+    published: "Published",
+    draft: "Draft",
+    viewDetails: "View Details",
+    edit: "Edit",
+    delete: "Delete",
+    playVideo: "Play Video",
+    viewImage: "View Image",
+    saveChanges: "Save Changes",
+    cancel: "Cancel",
+    update: "Update",
+    videoUpdated: "Video updated successfully",
+    videoDeleted: "Video deleted successfully",
+    videoAdded: "Video added successfully",
+    errorLoading: "Error loading videos",
+    noVideosFound: "No videos found",
+    totalVideos: "Total Videos",
+    activeVideos: "Active Videos",
+    latestVideoNumber: "Latest Video Number",
+    searchPlaceholder: "Search videos by title, description, or number...",
+    filterActive: "Active Only",
+    allVideos: "All Videos",
+    number: "#",
+    description: "Description",
+    status: "Status",
+    created: "Created",
+    actions: "Actions",
+    updating: "Updating...",
   },
 };
