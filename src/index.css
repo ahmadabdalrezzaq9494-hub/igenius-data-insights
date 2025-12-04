@@ -2,87 +2,103 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* Rakan Luxury Design System
+   All colors MUST be HSL.
+   Primary: Deep charcoal / near-black
+   Accents: Metallic gold and champagne tones
+   Neutrals: Warm off-white / ivory and soft greys
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 220 20% 15%;
+    /* Luxury Light Theme */
+    --background: 40 20% 98%;
+    --foreground: 30 10% 12%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 220 20% 15%;
+    --card: 40 15% 99%;
+    --card-foreground: 30 10% 12%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 20% 15%;
+    --popover: 40 15% 99%;
+    --popover-foreground: 30 10% 12%;
 
-    --primary: 220 70% 50%;
-    --primary-foreground: 0 0% 100%;
-    --primary-dark: 220 70% 40%;
+    /* Gold accent */
+    --primary: 42 75% 45%;
+    --primary-foreground: 40 20% 98%;
+    --primary-dark: 42 75% 35%;
 
-    --secondary: 220 15% 97%;
-    --secondary-foreground: 220 20% 15%;
+    /* Warm ivory secondary */
+    --secondary: 40 25% 95%;
+    --secondary-foreground: 30 10% 20%;
 
-    --muted: 220 15% 97%;
-    --muted-foreground: 220 10% 50%;
+    --muted: 40 15% 93%;
+    --muted-foreground: 30 8% 45%;
 
-    --accent: 190 85% 50%;
-    --accent-foreground: 0 0% 100%;
-    --accent-dark: 190 85% 40%;
+    /* Champagne accent */
+    --accent: 38 50% 65%;
+    --accent-foreground: 30 10% 12%;
+    --accent-dark: 38 50% 55%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive: 0 65% 50%;
+    --destructive-foreground: 40 20% 98%;
 
-    --border: 220 15% 90%;
-    --input: 220 15% 90%;
-    --ring: 220 70% 50%;
+    --border: 40 15% 88%;
+    --input: 40 15% 88%;
+    --ring: 42 75% 45%;
 
-    --radius: 0.75rem;
+    --radius: 0.25rem;
 
-    /* Custom design tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(220, 70%, 50%), hsl(190, 85%, 50%));
-    --gradient-subtle: linear-gradient(180deg, hsl(0, 0%, 100%), hsl(220, 15%, 97%));
-    --shadow-elegant: 0 10px 40px -10px hsl(220 70% 50% / 0.2);
-    --shadow-card: 0 4px 20px -4px hsl(220 70% 50% / 0.1);
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    /* Luxury design tokens */
+    --gradient-primary: linear-gradient(135deg, hsl(42, 75%, 45%), hsl(38, 50%, 65%));
+    --gradient-subtle: linear-gradient(180deg, hsl(40, 20%, 98%), hsl(40, 15%, 95%));
+    --gradient-gold: linear-gradient(135deg, hsl(42, 75%, 55%), hsl(42, 75%, 40%));
+    --shadow-elegant: 0 20px 60px -15px hsl(30 10% 12% / 0.15);
+    --shadow-card: 0 4px 30px -4px hsl(30 10% 12% / 0.08);
+    --shadow-gold: 0 10px 40px -10px hsl(42 75% 45% / 0.3);
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-luxury: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
   .dark {
-    --background: 220 25% 8%;
-    --foreground: 0 0% 98%;
+    /* Luxury Dark Theme - Deep Charcoal */
+    --background: 30 15% 6%;
+    --foreground: 40 15% 95%;
 
-    --card: 220 22% 12%;
-    --card-foreground: 0 0% 98%;
+    --card: 30 12% 10%;
+    --card-foreground: 40 15% 95%;
 
-    --popover: 220 22% 12%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 30 12% 10%;
+    --popover-foreground: 40 15% 95%;
 
-    --primary: 220 70% 55%;
-    --primary-foreground: 0 0% 100%;
-    --primary-dark: 220 70% 45%;
+    /* Gold accent */
+    --primary: 42 70% 55%;
+    --primary-foreground: 30 15% 6%;
+    --primary-dark: 42 70% 45%;
 
-    --secondary: 220 20% 15%;
-    --secondary-foreground: 0 0% 98%;
+    /* Dark secondary */
+    --secondary: 30 10% 14%;
+    --secondary-foreground: 40 15% 90%;
 
-    --muted: 220 20% 15%;
-    --muted-foreground: 220 10% 65%;
+    --muted: 30 10% 18%;
+    --muted-foreground: 40 10% 55%;
 
-    --accent: 190 85% 50%;
-    --accent-foreground: 0 0% 100%;
-    --accent-dark: 190 85% 40%;
+    /* Champagne accent */
+    --accent: 38 45% 60%;
+    --accent-foreground: 30 15% 6%;
+    --accent-dark: 38 45% 50%;
 
-    --destructive: 0 62.8% 50%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 0 55% 45%;
+    --destructive-foreground: 40 20% 98%;
 
-    --border: 220 20% 20%;
-    --input: 220 20% 20%;
-    --ring: 220 70% 55%;
+    --border: 30 10% 18%;
+    --input: 30 10% 18%;
+    --ring: 42 70% 55%;
 
-    --gradient-primary: linear-gradient(135deg, hsl(220, 70%, 55%), hsl(190, 85%, 50%));
-    --gradient-subtle: linear-gradient(180deg, hsl(220, 25%, 8%), hsl(220, 22%, 12%));
-    --shadow-elegant: 0 10px 40px -10px hsl(190 85% 50% / 0.3);
-    --shadow-card: 0 4px 20px -4px hsl(220 70% 55% / 0.2);
+    --gradient-primary: linear-gradient(135deg, hsl(42, 70%, 55%), hsl(38, 45%, 60%));
+    --gradient-subtle: linear-gradient(180deg, hsl(30, 15%, 6%), hsl(30, 12%, 10%));
+    --gradient-gold: linear-gradient(135deg, hsl(42, 70%, 60%), hsl(42, 70%, 45%));
+    --shadow-elegant: 0 20px 60px -15px hsl(0 0% 0% / 0.5);
+    --shadow-card: 0 4px 30px -4px hsl(0 0% 0% / 0.3);
+    --shadow-gold: 0 10px 40px -10px hsl(42 70% 55% / 0.25);
   }
 }
 
@@ -93,6 +109,13 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
   }
 
   /* RTL Support */
@@ -114,8 +137,127 @@ All colors MUST be HSL.
     margin-right: 1rem;
   }
 
+  [dir="rtl"] .space-x-6 > * + * {
+    margin-left: 0;
+    margin-right: 1.5rem;
+  }
+
   [dir="rtl"] .space-x-8 > * + * {
     margin-left: 0;
     margin-right: 2rem;
+  }
+
+  [dir="rtl"] .ml-auto {
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  [dir="rtl"] .mr-auto {
+    margin-right: 0;
+    margin-left: auto;
+  }
+}
+
+@layer components {
+  .luxury-text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-gold);
+  }
+
+  .luxury-border {
+    @apply border border-primary/20;
+  }
+
+  .luxury-glow {
+    box-shadow: var(--shadow-gold);
+  }
+
+  .luxury-card {
+    @apply bg-card border border-border/50;
+    box-shadow: var(--shadow-card);
+  }
+
+  .luxury-button {
+    @apply bg-gradient-to-r from-primary to-accent text-primary-foreground;
+    transition: var(--transition-luxury);
+  }
+
+  .luxury-button:hover {
+    @apply opacity-90;
+    box-shadow: var(--shadow-gold);
+  }
+}
+
+@layer utilities {
+  .animate-fade-up {
+    animation: fade-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.6s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scale-in 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  .animate-shimmer {
+    animation: shimmer 2s linear infinite;
+  }
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes scale-in {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+
+  .animation-delay-600 {
+    animation-delay: 600ms;
+  }
+
+  .animation-delay-800 {
+    animation-delay: 800ms;
   }
 }
