@@ -10,8 +10,8 @@ const Policies = () => {
   const policies = [
     {
       icon: Shield,
-      title: t.policies.privacyPolicy,
-      description: "How we collect, use, and protect your personal information.",
+      title: t.policies.privacy.title,
+      description: t.policies.privacy.content,
       sections: [
         "Data Collection & Usage",
         "User Rights & Choices",
@@ -21,8 +21,8 @@ const Policies = () => {
     },
     {
       icon: FileText,
-      title: t.policies.termsOfService,
-      description: "The terms and conditions governing the use of our services.",
+      title: t.policies.terms.title,
+      description: t.policies.terms.content,
       sections: [
         "Service Usage Terms",
         "User Responsibilities",
@@ -32,8 +32,8 @@ const Policies = () => {
     },
     {
       icon: Lock,
-      title: t.policies.dataProcessing,
-      description: "Our commitment to secure and compliant data processing.",
+      title: t.policies.cookies.title,
+      description: t.policies.cookies.content,
       sections: [
         "Data Processing Principles",
         "Subprocessor List",
@@ -43,8 +43,8 @@ const Policies = () => {
     },
     {
       icon: Server,
-      title: t.policies.security,
-      description: "Enterprise-grade security measures protecting your data.",
+      title: t.policies.data.title,
+      description: t.policies.data.content,
       sections: [
         "Infrastructure Security",
         "Access Controls",
