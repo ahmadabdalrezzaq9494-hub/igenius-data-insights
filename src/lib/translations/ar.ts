@@ -3,6 +3,7 @@ export const ar = {
     home: "الرئيسية",
     about: "من نحن",
     services: "خدماتنا",
+    products: "المنتجات",
     contact: "تواصل معنا",
     login_button: "تسجيل الدخول",
     logout: "تسجيل الخروج",
@@ -212,8 +213,9 @@ export const ar = {
   },
   products: {
     title: "منتجاتنا",
+    tagline: "مجموعة حصرية",
     subtitle: "حلول مبتكرة مصممة لتحويل أعمالك وتحقيق نتائج استثنائية.",
-    watchVideo: "شاهد الفيديو",
+    watchVideo: "شاهد العرض",
     learnMore: "اعرف المزيد",
   },
   successStories: {

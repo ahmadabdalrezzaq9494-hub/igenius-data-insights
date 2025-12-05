@@ -169,13 +169,17 @@ const Products = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-charcoal to-background">
         <div className="container mx-auto text-center">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 animate-fade-in">
+          <span className="inline-block text-gold/80 text-sm font-medium tracking-[0.3em] uppercase mb-4 animate-fade-in">
+            {t.products?.tagline || "Exclusive Collection"}
+          </span>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold mb-6 animate-fade-in text-ivory">
             {t.products?.title || "Our Products"}
           </h1>
+          <div className="w-24 h-px bg-gradient-to-r from-transparent via-gold to-transparent mx-auto mb-6" />
           <p
-            className="text-xl text-muted-foreground max-w-3xl mx-auto mb-12 animate-fade-in"
+            className="text-xl text-ivory/70 max-w-3xl mx-auto mb-12 animate-fade-in"
             style={{ animationDelay: "0.1s" }}
           >
             {t.products?.subtitle || "Discover our innovative solutions"}
@@ -244,34 +248,34 @@ const Products = () => {
 
                     {/* Details */}
                     <div className="flex-1 space-y-6">
-                      <div className="inline-flex items-center justify-center p-3 rounded-2xl bg-primary/10 text-primary">
+                      <div className="inline-flex items-center justify-center p-4 rounded-2xl bg-gold/10 text-gold border border-gold/20">
                         <Icon className="w-8 h-8" />
                       </div>
 
-                      <h2 className="text-3xl sm:text-4xl font-bold">
+                      <h2 className="text-3xl sm:text-4xl font-serif font-bold text-foreground">
                         {video.title}
                       </h2>
 
-                      <p className="text-lg text-muted-foreground">
+                      <p className="text-lg text-muted-foreground leading-relaxed">
                         {video.short_description}
                       </p>
 
                       {features.length > 0 && (
-                        <div className="space-y-3">
+                        <div className="space-y-3 py-4 border-t border-border/30">
                           {features.map((feature, idx) => (
                             <div key={idx} className="flex items-center gap-3">
-                               <div className="w-2 h-2 rounded-full bg-primary flex-shrink-0" />
-                               <span className="text-foreground font-medium">{feature}</span>
+                               <div className="w-2 h-2 rounded-full bg-gold flex-shrink-0" />
+                               <span className="text-foreground/90 font-medium">{feature}</span>
                             </div>
                           ))}
                         </div>
                       )}
 
                       <div className="flex gap-4 pt-4">
-                        <Button variant="default" size="lg">
+                        <Button variant="default" size="lg" className="bg-gold hover:bg-gold/90 text-charcoal font-semibold">
                           {t.products?.learnMore || "Learn More"}
                         </Button>
-                        <Button variant="outline" size="lg">
+                        <Button variant="outline" size="lg" className="border-gold/30 text-gold hover:bg-gold/10">
                           {t.products?.watchVideo || "Watch Demo"}
                         </Button>
                       </div>
@@ -317,9 +321,10 @@ const Products = () => {
         </section>
       )}
       {/* Footer */}
-      <footer className="border-t border-border py-12 px-4 sm:px-6 lg:px-8">
-        <div className="container mx-auto text-center text-muted-foreground">
-          <p>{t.footer?.copyright || "© 2025 iGenius. All rights reserved."}</p>
+      <footer className="border-t border-border/30 py-16 px-4 sm:px-6 lg:px-8 bg-charcoal">
+        <div className="container mx-auto text-center">
+          <img src="/logo.png" alt="Rakan" className="h-12 w-12 mx-auto mb-4 opacity-60" />
+          <p className="text-ivory/60 font-serif">{t.footer?.copyright || "© 2025 Rakan. All rights reserved."}</p>
         </div>
       </footer>
     </div>
