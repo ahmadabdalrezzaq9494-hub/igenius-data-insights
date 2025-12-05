@@ -69,6 +69,13 @@ export const Navigation = () => {
               {t.nav.services}
             </NavLink>
             <NavLink
+              to="/products"
+              className="text-foreground/80 hover:text-primary transition-colors font-medium"
+              activeClassName="text-primary"
+            >
+              {t.nav.products}
+            </NavLink>
+            <NavLink
               to="/contact"
               className="text-foreground/80 hover:text-primary transition-colors font-medium"
               activeClassName="text-primary"
@@ -215,6 +222,13 @@ export const Navigation = () => {
               onClick={() => setMobileMenuOpen(false)}
             >
               {t.nav.services}
+            </NavLink>
+            <NavLink
+              to="/products"
+              className="block w-full text-left px-4 py-3 hover:bg-secondary rounded-lg"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              {t.nav.products}
             </NavLink>
             <NavLink
               to="/contact"

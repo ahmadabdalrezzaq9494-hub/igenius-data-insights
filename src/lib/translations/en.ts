@@ -3,6 +3,7 @@ export const en = {
     home: "Home",
     about: "About",
     services: "Services",
+    products: "Products",
     contact: "Contact",
     login_button: "Login",
     logout: "Logout",
@@ -212,8 +213,9 @@ export const en = {
   },
   products: {
     title: "Our Products",
+    tagline: "Exclusive Collection",
     subtitle: "Innovative solutions designed to transform your business and drive exceptional results.",
-    watchVideo: "Watch Video",
+    watchVideo: "Watch Demo",
     learnMore: "Learn More",
   },
   successStories: {
