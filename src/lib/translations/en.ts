@@ -210,4 +210,47 @@ export const en = {
     actions: "Actions",
     updating: "Updating...",
   },
+  products: {
+    title: "Our Products",
+    subtitle: "Innovative solutions designed to transform your business and drive exceptional results.",
+    watchVideo: "Watch Video",
+    learnMore: "Learn More",
+  },
+  successStories: {
+    title: "Success Stories",
+    subtitle: "Real results from real clients. Discover how we've helped organizations achieve extraordinary outcomes.",
+    challenge: "Challenge",
+    solution: "Solution",
+    results: "Results",
+    ctaSection: {
+      title: "Ready to Write Your Success Story?",
+      subtitle: "Join the ranks of our distinguished clients and experience the Rakan difference.",
+      button: "Start Your Journey",
+    },
+  },
+  memberBenefits: {
+    title: "Member Benefits",
+    subtitle: "Exclusive advantages for our valued members",
+    cta: "Become a Member",
+  },
+  policies: {
+    title: "Policies",
+    subtitle: "Our commitment to transparency and trust",
+    privacy: {
+      title: "Privacy Policy",
+      content: "We are committed to protecting your privacy and ensuring the security of your personal information.",
+    },
+    terms: {
+      title: "Terms of Service",
+      content: "By using our services, you agree to these terms and conditions.",
+    },
+    cookies: {
+      title: "Cookie Policy",
+      content: "We use cookies to enhance your browsing experience.",
+    },
+    data: {
+      title: "Data Protection",
+      content: "Your data is protected according to the highest security standards.",
+    },
+  },
 };

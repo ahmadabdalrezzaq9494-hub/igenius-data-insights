@@ -153,7 +153,7 @@ const SuccessStories = () => {
 
                     <div className="pt-4">
                       <Button variant="outline" size="lg">
-                        {t.successStories.cta}
+                        {t.services.learnMore}
                       </Button>
                     </div>
                   </CardContent>

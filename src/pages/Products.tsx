@@ -269,10 +269,10 @@ const Products = () => {
 
                       <div className="flex gap-4 pt-4">
                         <Button variant="default" size="lg">
-                          {t.products?.cta || "Learn More"}
+                          {t.products?.learnMore || "Learn More"}
                         </Button>
                         <Button variant="outline" size="lg">
-                          {t.products?.demo || "Watch Demo"}
+                          {t.products?.watchVideo || "Watch Demo"}
                         </Button>
                       </div>
                     </div>
